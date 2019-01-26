@@ -1,0 +1,3 @@
+stacer_1.0.9_amd64.deb
+google-chrome-stable_current_amd64.deb
+slack-desktop-3.3.7-amd64.deb
