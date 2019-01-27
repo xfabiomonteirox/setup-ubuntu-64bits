@@ -10,6 +10,7 @@
 #                       irá verificar se existe o arquivo "links.txt", se existir o script irá percorrer todo o conteúdo
 #                       do arquivo e executar o comando para baixar os pacotes, após baixar os pacotes também será verificada
 #                       a existência do arquivo "pacotes.txt", caso exista, será executado o comando para instalar os pacotes.
+#                       Por último, é executado um comando para customizar o bash de acordo com as minhas preferências de usuário.
 # Autor:                Fábio A. Monteiro
 # E-mail:               xfabiomonteirox@gmail.com
 # Licença:              MIT.
@@ -99,5 +100,14 @@ for i in `cat "$PACOTE"`; do
 done
 fi
  
-
+##################################################################################
+#                                                                                #
+# customiza o bash de acordo com as minhas preferências de usuário               # 
+# para customizar o bash de acordo com as suas preferências, acessar o link:     #
+# http://ezprompt.net/  e substituir a variável "PS1" pela gerada pelo site      #
+#                                                                                #
+##################################################################################
+echo '' >> ~/.bashrc
+echo '# Custom prompt by xfabiomonteirox' >> ~/.bashrc
+echo 'export PS1="\[\e[32m\]\u\[\e[m\] at \[\e[33m\]\h\[\e[m\] in \[\e[34m\]\w\[\e[m\] \\$ "' >> ~/.bashrc
 
