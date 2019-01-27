@@ -32,7 +32,7 @@ fi
 #                                                                                #
 # atualiza os repositórios e os pacotes já instalados,                           # 
 # caso não seja possível atualizar os pacotes e ou os repositórios,              #
-# será retornado uma mensagem de erro e será abordada a execução do script       #
+# será retornado uma mensagem de erro e será abortada a execução do script       #
 #                                                                                #
 ##################################################################################
 echo "Atualizando os repositórios.."
@@ -54,10 +54,10 @@ echo "Atualização de pacotes realizada com sucesso."
 ##################################################################################
 #                                                                                #
 # verifica se existe o arquivo "link.txt", caso não exista o arquivo             # 
-# será retornada uma mensagem de erro e abordada a execução do script            #
+# será retornada uma mensagem de erro e abortada a execução do script            #
 # se existir o arquivo, será percorrido o conteúdo do mesmo e, em seguida        #
 # baixado os pacotes, se não for possível baixar algum pacote                    #
-# será retornada uma mensagem de erro e abordada a execução do script            #
+# será retornada uma mensagem de erro e abortada a execução do script            #
 #                                                                                #
 ##################################################################################
 if [ ! -f "$LINK" ]; 
@@ -77,10 +77,10 @@ fi
 ##################################################################################
 #                                                                                #
 # verifica se existe o arquivo "pacotes.txt", caso não exista o arquivo          # 
-# será retornada uma mensagem de erro e abordada a execução do script            #
+# será retornada uma mensagem de erro e abortada a execução do script            #
 # se existir o arquivo, será percorrido o conteúdo do mesmo e, em seguida        #
 # instalado os pacotes, se não for possível instalar algum pacote                #
-# será retornada uma mensagem de erro e abordada a execução do script            #
+# será retornada uma mensagem de erro e abortada a execução do script            #
 #                                                                                #
 ##################################################################################
 if [ ! -f "$PACOTE" ]; 
